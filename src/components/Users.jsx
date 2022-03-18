@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import UserSearch from './UserSearch';
 import './Users.css';
-import { Posts } from './Posts';
+
 
 export function Users() {
   return (

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useQuery } from 'react-query';
 
@@ -26,13 +27,9 @@ export function Posts({ user }) {
   return (
     <>
       <div>
-        <FindPosts />
+        <FindPosts data={data} />
       </div>
-      <div>
-        {data.map((post) => (
-          <li key={post.id}>{post.title}</li>
-        ))}
-      </div>
+     
     </>
   );
 }
