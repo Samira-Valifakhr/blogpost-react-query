@@ -27,7 +27,7 @@ export default function(post) {
         data
           .filter((post) => {
             if (searchTerm == '') {
-              return post;
+              return;
             } else if (
               post.title.toLowerCase().includes(searchTerm.toLowerCase())
             ) {
@@ -36,7 +36,7 @@ export default function(post) {
           })
           .map((post, key) => {
             return (
-              <div key={post.userId}>
+              <div key={key}>
                 <p>{post.title}</p>
               </div>
             );

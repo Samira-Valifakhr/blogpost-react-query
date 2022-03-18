@@ -30,7 +30,7 @@ export function Posts({ user }) {
       </div>
       <div>
         {data.map((post) => (
-          <li key={post.userId}>{post.title}</li>
+          <li key={post.id}>{post.title}</li>
         ))}
       </div>
     </>
